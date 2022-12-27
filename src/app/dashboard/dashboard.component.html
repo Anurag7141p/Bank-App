@@ -1,0 +1,71 @@
+<div class="row">
+
+    <div class="col-1">
+
+    </div>
+
+    <div class="col-4">
+
+        <div class="text-center">
+
+            <h1 class="text-light" style="font-family: cursive;margin-top: 100px;">Deposite</h1>
+
+            <img src="../../assets/flat-icon-of-bank-building-vector-10876259_low.png" width="100px" height="100px">
+            <h6>Your Perfect Banking Partner</h6>
+
+            <input type="text" id="depo_acno" placeholder="Account number" [(ngModel)]="acno" name="account number"
+                class="mt-2 form-control w-75 ms-5 border-0 rounded-pill" style="background-color: #1e5162 ;"><br>
+
+            <input type="password" id="depo_pswd" placeholder="Password" [(ngModel)]="pswd" name="password"
+                class="mt-2 form-control w-75 ms-5 border-0 rounded-pill" style="background-color: #1e5162 ;"><br>
+
+            <input type="text" id="depo_amount" placeholder="Amount" [(ngModel)]="amount" name="Amount"
+                class="mt-3 form-control w-75 ms-5 border-0 rounded-pill" style="background-color: #1e5162 ;"><br>
+
+            <button (click)="deposite()" id="button"
+                style="width: 200px;height: 35px; border-radius: 25px; background-color: #0be087; border: 0;font-family: cursive;font-weight:500;">
+                Deposite</button><br><br>
+
+
+        </div>
+
+    </div>
+
+    <div class="col-2">
+
+    </div>
+   
+
+    <div class="col-4">
+        <div class="text-center">
+
+            <h1 class="text-light" style="font-family: cursive;margin-top: 100px;">Withdraw</h1>
+
+            <img src="../../assets/flat-icon-of-bank-building-vector-10876259_low.png" width="100px" height="100px">
+            <h6>Your Perfect Banking Partner</h6>
+
+            <input type="text" id="withdraw_acno" placeholder="Account number" [(ngModel)]="acno1" name="account number"
+                class="mt-2 form-control w-75 ms-5 border-0 rounded-pill" style="background-color: #1e5162 ;"><br>
+
+            <input type="password" id="withdraw_pswd" placeholder="Password" [(ngModel)]="pswd1" name="password"
+                class="mt-2 form-control w-75 ms-5 border-0 rounded-pill" style="background-color: #1e5162 ;"><br>
+
+            <input type="text" id="withdraw_amount" placeholder="Amount" [(ngModel)]="amount1" name="Amount"
+                class="mt-3 form-control w-75 ms-5 border-0 rounded-pill" style="background-color: #1e5162 ;"><br>
+
+            <button (click)="withdraw()" id="button"
+                style="width: 200px;height: 35px; border-radius: 25px; background-color: #0be087; border: 0;font-family: cursive;font-weight:500;">
+                Withdraw</button><br><br> 
+
+        </div>
+
+    </div>
+
+    <div class="col-1">
+
+    </div>
+</div>
+
+
+
+

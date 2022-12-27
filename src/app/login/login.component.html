@@ -11,11 +11,13 @@
   
         <img src="../../assets/flat-icon-of-bank-building-vector-10876259_low.png" width="100px" height="100px">
         <h6>{{aim}}</h6>
+        <!-- string interpolation -->
   
-        <input type="text" id="log_accno" [placeholder]="account" (change)="acnochange($event)"
+        <input type="text" id="log_accno" [placeholder]="account" 
+        [(ngModel)]="acno"
             class="mt-3 form-control w-75 ms-5 border-0 rounded-pill" style="background-color: #1e5162 ;"><br>
   
-        <input type="password" id="log_pswd" placeholder="Password" (change)="pswdchange($event)"
+        <input type="password" id="log_pswd" placeholder="Password"  [(ngModel)]="pswd"
             class="mt-2 form-control w-75 ms-5 border-0 rounded-pill" style="background-color: #1e5162 ;"><br>
   
         <button (click)="login()" id="button"
@@ -23,7 +25,8 @@
   
         <a href=""
             style="text-decoration: none;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Forget
-            password</a>&nbsp; or &nbsp;<a href="signup.html"
+            password</a>&nbsp; or &nbsp;
+            <a  routerLink="register"
             style="text-decoration: none;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Sign up</a>
   
     </div>
@@ -33,4 +36,3 @@
     </div>
   </div>
 
-  <app-register></app-register>
